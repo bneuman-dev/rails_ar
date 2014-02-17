@@ -1,0 +1,9 @@
+<p>Deadline: <%= task.deadline %></p>
+  <p>Completed: <%= task.completed %></p>
+  <p>Priority level: <%= task.priority.priority %></p>
+  <p>Creator: <%= link_to "#{task.creator.name}", user_path(task.creator) %></p>
+  <p></p>
+  <p><%= task.description %></p>
+  <br><br>
+  <%= link_to "Edit task", edit_task_path(task) %>
+  <br><br>

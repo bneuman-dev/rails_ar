@@ -1,0 +1,5 @@
+<h2>Edit task for list <%= @list.name %></h2>
+<%= form_for(@task) do |g| %>
+<%= render 'task_form' %>
+<p><%= g.submit %></p>
+<% end %>
